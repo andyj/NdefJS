@@ -350,7 +350,7 @@
         var foundStart = false;
 
         var currentIndex = 0;
-        while(!done) {
+        while(!done && currentIndex.toString() != 'NaN') {
             if(currentIndex >= bytes.length) {
                 // ran out of bytes before message ended
                 throw "Ran out of bytes before message started";
